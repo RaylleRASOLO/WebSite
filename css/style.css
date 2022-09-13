@@ -1,0 +1,91 @@
+body {
+  background: rgb(11, 11, 14);
+  color: white;
+  font-size: 1.1rem;
+  font-family: Tahoma, sans-serif;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+}
+.navigation .logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+.navigation .liste_menu_container {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+.navigation .liste_menu_container .liste_menu_item {
+  margin: 1.1vw;
+  transition: ease-out 350ms;
+}
+.navigation .liste_menu_container .liste_menu_item:hover {
+  color: rgb(123, 69, 177);
+  cursor: pointer;
+}
+.navigation .liste_menu_container .active {
+  color: rgb(123, 69, 177);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 13vh;
+}
+.container .descritpion {
+  width: 40vw;
+}
+.container .descritpion .subtitle {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(175, 175, 175);
+  font-size: 1.2rem;
+}
+.container .descritpion .title {
+  position: relative;
+  top: -2vh;
+  font-size: 3.3rem;
+  font-weight: bold;
+}
+.container .descritpion .title .span {
+  color: rgb(123, 69, 177);
+}
+.container .descritpion .text {
+  position: relative;
+  top: -3vh;
+  color: rgb(175, 175, 175);
+}
+.container .descritpion .link {
+  font-size: 1.4rem;
+  position: relative;
+  top: 2vh;
+  color: rgb(123, 69, 177);
+}
+.container .illustration {
+  position: relative;
+  top: -6vh;
+}
+.container .illustration .card_1 {
+  background: rgb(123, 69, 177);
+  width: 38vw;
+  height: 40vh;
+  margin: 17px;
+  border-radius: 20px;
+}
+.container .illustration .card_2 {
+  position: relative;
+  right: -15vw;
+  background: rgb(39, 39, 39);
+  width: 23vw;
+  height: 20vh;
+  margin: 17px;
+  border-radius: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

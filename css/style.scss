@@ -1,0 +1,113 @@
+$primary_color: rgb(123, 69, 177);
+$primary_color_gris: rgb(175, 175, 175);
+$card_color: rgb(39, 39, 39);
+$secondary_color: rgb(11, 11, 14);
+$font_familly: Tahoma, sans-serif;
+$font_size_title: 3.3rem;
+$border: 20px;
+
+body {
+	background: $secondary_color;
+	color: white;
+	font-size: 1.1rem;
+	font-family: $font_familly;
+	margin-left: 10vw;
+	margin-right: 10vw;
+}
+
+// ---------- Style de navigation ----------
+
+.navigation {
+	display: flex;
+	flex-direction: row;
+
+	.logo {
+		display: flex;
+		align-items: center;
+		flex-grow: 1;
+	}
+
+	.liste_menu_container {
+		display: flex;
+		flex-direction: row;
+		list-style-type: none;
+
+		.liste_menu_item {
+			margin: 1.1vw;
+			transition: ease-out 350ms;
+
+			&:hover {
+				color: $primary_color;
+				cursor: pointer;
+			}
+		}
+
+		.active {
+			color: $primary_color;
+		}
+	}
+}
+
+// ---------- Style de Contenu ----------
+.container {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	top: 13vh;
+
+	.descritpion {
+		width: 40vw;
+
+		.subtitle {
+			font-family: Arial, Helvetica, sans-serif;
+			color: $primary_color_gris;
+			font-size: 1.2rem;
+		}
+
+		.title {
+			position: relative;
+			top: -2vh;
+			font-size: $font_size_title;
+			font-weight: bold;
+
+			.span {
+				color: $primary_color;
+			}
+		}
+
+		.text {
+			position: relative;
+			top: -3vh;
+			color: $primary_color_gris;
+		}
+
+		.link {
+			font-size: 1.4rem;
+			position: relative;
+			top: 2vh;
+			color: $primary_color;
+		}
+	}
+
+	.illustration {
+		position: relative;
+		top: -6vh;
+
+		.card_1 {
+			background: $primary_color;
+			width: 38vw;
+			height: 40vh;
+			margin: 17px;
+			border-radius: $border;
+		}
+		.card_2 {
+			position: relative;
+			right: -15vw;
+			background: $card_color;
+			width: 23vw;
+			height: 20vh;
+			margin: 17px;
+			border-radius: $border;
+		}
+	}
+}
