@@ -58,7 +58,7 @@ body {
 }
 .container .descritpion .text {
   position: relative;
-  top: -3vh;
+  top: -4vh;
   color: rgb(175, 175, 175);
 }
 .container .descritpion .link {
@@ -72,16 +72,20 @@ body {
   top: -6vh;
 }
 .container .illustration .card_1 {
-  background: rgb(123, 69, 177);
+  background: rgb(169, 12, 194);
+  background: linear-gradient(90deg, rgb(16, 102, 135) 0%, rgb(98, 5, 96) 49%, rgb(120, 24, 148) 100%);
   width: 38vw;
   height: 40vh;
   margin: 17px;
   border-radius: 20px;
 }
+.container .illustration .card_1 .title_card {
+  color: white;
+}
 .container .illustration .card_2 {
   position: relative;
   right: -15vw;
-  background: rgb(39, 39, 39);
+  background: linear-gradient(90deg, rgb(47, 46, 46) 0%, rgb(25, 22, 60) 50%, rgb(51, 43, 57) 100%);
   width: 23vw;
   height: 20vh;
   margin: 17px;

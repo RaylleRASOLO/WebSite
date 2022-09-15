@@ -5,6 +5,18 @@ $secondary_color: rgb(11, 11, 14);
 $font_familly: Tahoma, sans-serif;
 $font_size_title: 3.3rem;
 $border: 20px;
+$linear_gradient: linear-gradient(
+	90deg,
+	rgba(16, 102, 135, 1) 0%,
+	rgba(98, 5, 96, 1) 49%,
+	rgba(120, 24, 148, 1) 100%
+);
+$linear_gradient_gris: linear-gradient(
+	90deg,
+	rgba(47, 46, 46, 1) 0%,
+	rgba(25, 22, 60, 1) 50%,
+	rgba(51, 43, 57, 1) 100%
+);
 
 body {
 	background: $secondary_color;
@@ -77,7 +89,7 @@ body {
 
 		.text {
 			position: relative;
-			top: -3vh;
+			top: -4vh;
 			color: $primary_color_gris;
 		}
 
@@ -94,16 +106,21 @@ body {
 		top: -6vh;
 
 		.card_1 {
-			background: $primary_color;
+			background: rgb(169, 12, 194);
+			background: $linear_gradient;
 			width: 38vw;
 			height: 40vh;
 			margin: 17px;
 			border-radius: $border;
+
+				.title_card {
+					color: white;
+				}
 		}
 		.card_2 {
 			position: relative;
 			right: -15vw;
-			background: $card_color;
+			background: $linear_gradient_gris;
 			width: 23vw;
 			height: 20vh;
 			margin: 17px;
